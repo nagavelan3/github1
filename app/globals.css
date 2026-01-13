@@ -3,74 +3,17 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --primary: #ec48d9;
-  /* --primary: #ec8c48;  */
+  --primary: #f57c00;
   --font-roboto: 'Roboto', sans-serif;
   --font-open-sans: 'Open Sans', sans-serif;
-}
-
-@theme {
-  --color-primary: var(--primary);
-  --color-primary-hover: color-mix(in srgb, var(--primary), black 10%);
-  --color-primary-light: color-mix(in srgb, var(--primary), white 90%);
-  --color-primary-border: color-mix(in srgb, var(--primary), white 50%);
-}
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  overscroll-behavior-y: none;
-  /* Prevents bounce effect */
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-open-sans), Arial, Helvetica, sans-serif;
-  overflow-x: hidden;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
 }
 
-button {
-  cursor: pointer;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-roboto), Arial, Helvetica, sans-serif;
-}
-
-/* Custom Scrollbar */
-.custom-scrollbar::-webkit-scrollbar {
-  height: 4px;
-}
-
-.custom-scrollbar::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: var(--primary);
-  border-radius: 20px;
-}
-
-.custom-scrollbar {
-  scrollbar-width: thin;
-  scrollbar-color: var(--primary) transparent;
-}
-
-/* Ensure consistent lateral spacing */
-/* Ensure consistent lateral spacing */
-.container {
-    max-width: 1280px; 
-    margin-inline: auto;
-  padding-inline: 2rem;
 }

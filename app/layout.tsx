@@ -1,23 +1,37 @@
 import type { Metadata } from "next";
+import { Roboto, Open_Sans } from "next/font/google";
 import "./globals.css";
 
+const roboto = Roboto({
+  variable: "--font-roboto",
+  subsets: ["latin"],
+  weight: ["100", "300", "400", "500", "700", "900"],
+});
+
+const openSans = Open_Sans({
+  variable: "--font-open-sans",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800"],
+});
+
 export const metadata: Metadata = {
-  title: "CMP Builders - Building Excellence",
+  title: "iConstruction - Building Excellence",
   description: "Professional Construction Services",
-  icons: {
-    icon: '/pinki.ico',
-    // icon: '/orangi.ico',
-  },
 };
+
+import Navbar from "@/components/Navbar";
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
-    <html lang="en" suppressHydrationWarning suppressContentEditableWarning>
-      <body>
+    <html lang="en">
+      <body
+        className={`${roboto.variable} ${openSans.variable} antialiased`}
+      >
+        <Navbar />
         {children}
       </body>
     </html>
