@@ -11,8 +11,8 @@ export default function ContactCTA() {
                     Get in touch with our team to discuss your construction needs and receive a personalized quote for your project.
                 </p>
                 <Link
-                    href="#"
-                    className="inline-flex items-center bg-[#E65100] hover:bg-[#F57C00] text-white px-8 py-4 rounded font-semibold transition"
+                    href="/quote"
+                    className="inline-flex items-center bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded font-semibold transition"
                 >
                     Get Free Quote
                     <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
