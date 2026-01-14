@@ -52,7 +52,7 @@ export default function ConsultationForm({ serviceTitle }: ConsultationFormProps
                 <p><strong>Details:</strong><br/>${formData.details.replace(/\n/g, '<br/>')}</p>
             `;
 
-            await axios.post("http://localhost:8000/mail-server/send-email.php", {
+            await axios.post("/mail-server/send-email.php", {
                 toEmail: "nagavelan2005@gmail.com",
                 toName: "Nagavelan",
                 subject: `New Consultation Request - ${serviceTitle}`,

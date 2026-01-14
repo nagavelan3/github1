@@ -51,7 +51,7 @@ export default function QuoteContent() {
         const timelineLabel = timelineOptions.find(opt => opt.value === timeline)?.label || timeline;
 
         try {
-            const response = await axios.post("http://localhost:8000/mail-server/send-email.php", {
+            const response = await axios.post("/mail-server/send-email.php", {
                 toEmail: "nagavelan2005@gmail.com",
                 toName: "Nagavelan",
                 subject: "New Detailed Quote Request",

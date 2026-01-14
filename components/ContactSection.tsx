@@ -22,7 +22,7 @@ export default function ContactSection() {
         setSuccessMessage("");
 
         try {
-            const response = await axios.post("http://localhost:8000/mail-server/send-email.php", {
+            const response = await axios.post("/mail-server/send-email.php", {
                 toEmail: "nagavelan2005@gmail.com",
                 toName: "Nagavelan",
                 subject: formData.subject,

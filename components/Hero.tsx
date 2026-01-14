@@ -33,15 +33,17 @@ export default function Hero() {
                     We deliver comprehensive construction solutions with unwavering commitment to quality, safety, and timely completion. Trust our experienced team to bring your vision to life with precision and professionalism.
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
-                    <Link href="/quote">
-                        <button className="bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded font-semibold text-lg transition min-w-[200px]">
-                            REQUEST QUOTE
-                        </button>
+                    <Link
+                        href="/quote"
+                        className="bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded font-semibold text-lg transition min-w-[200px] text-center"
+                    >
+                        REQUEST QUOTE
                     </Link>
-                    <Link href="/projects">
-                        <button className="bg-transparent border-2 border-white/30 hover:bg-white/10 text-white px-8 py-4 rounded font-semibold text-lg transition min-w-[200px]">
-                            VIEW PROJECTS
-                        </button>
+                    <Link
+                        href="/projects"
+                        className="bg-transparent border-2 border-white/30 hover:bg-white/10 text-white px-8 py-4 rounded font-semibold text-lg transition min-w-[200px] text-center"
+                    >
+                        VIEW PROJECTS
                     </Link>
                 </div>
             </div>
